@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
