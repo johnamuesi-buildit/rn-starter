@@ -17,7 +17,7 @@ const addBuildContext = () => {
 }
 
 //Sentry config
-export const  setupSentry = () =>  {
+export default  setupSentry = () =>  {
     Sentry.config(SENTRY_DNS).install();
     addBuildContext()
   }

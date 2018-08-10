@@ -1,7 +1,7 @@
 import { AppRegistry } from 'react-native';
 import App from './App';
 
-import setupSentry from './src/utils';
+import setupSentry from './src/utils/sentry';
 
 setupSentry();
  
