@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor.c \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitorType.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Tools/SentryCrashThread.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitorContext.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Tools/SentryCrashMachineContext.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_Deadlock.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_MachException.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_CPPException.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_NSException.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_Signal.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_System.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_User.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_AppState.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Monitors/SentryCrashMonitor_Zombie.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Tools/SentryCrashDebug.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/SentryCrashSystemCapabilities.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/node_modules/react-native-sentry/ios/Sentry/Sources/SentryCrash/Recording/Tools/SentryCrashLogger.h

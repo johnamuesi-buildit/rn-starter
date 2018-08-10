@@ -1,6 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { Sentry } from 'react-native-sentry';
+
+Sentry.config('https://49858edec3e94dddabb47a44ddd8107f@sentry.io/1260032').install();
+
+
 export default class App extends React.Component {
   render() {
     return (

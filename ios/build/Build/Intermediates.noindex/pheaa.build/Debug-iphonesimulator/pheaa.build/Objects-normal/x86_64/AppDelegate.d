@@ -9,4 +9,5 @@ dependencies: \
   /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
   /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/ios/build/Build/Products/Debug-iphonesimulator/include/React/RNSentry.h

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>HZ8J37BWCV.org.reactjs.native.example.pheaa</string>
+	<string>HZ8J37BWCV.com.sarchitech.-</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>HZ8J37BWCV.org.reactjs.native.example.pheaa</string>
+		<string>HZ8J37BWCV.com.sarchitech.-</string>
 	</array>
 </dict>
 </plist>
