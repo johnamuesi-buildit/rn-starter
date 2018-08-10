@@ -1,5 +1,11 @@
+console.disableYellowBox = true;
+
+ 
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
+
 import { Path } from 'react-native-svg'
 import { AreaChart, Grid, LineChart, ProgressCircle } from 'react-native-svg-charts'
 
@@ -45,6 +51,7 @@ export default class App extends React.Component {
                 progress={ 0.7 }
                 progressColor={'rgb(134, 65, 244)'}
             />
+            <Ionicons name="ios-home" size={24}/>
       </View>
         
     )
