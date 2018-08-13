@@ -15,9 +15,11 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html"
   },
   "jest": {
+    "collectCoverageFrom":[".src/**/.js"],
     "transformIgnorePatterns": [
       "node_modules/(?!react-navigation|react-native|expo|native-base-shoutem-theme|native-base)"
     ],
