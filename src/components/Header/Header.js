@@ -1,12 +1,13 @@
 import React from 'react';
+import {COLOURS} from '../../theme';
 
-export default (HeaderComponent = () => (
+export default HeaderComponent = () => (
   <Header>
     <Left />
 
     <Body>
-      <Title>{this.props.title}</Title>
+      <Title style={{color:COLOURS.secondary}}>{this.props.title}</Title>
     </Body>
     <Right />
   </Header>
-));
+);

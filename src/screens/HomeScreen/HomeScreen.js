@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {View, } from 'react-native'
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
+import {COLOURS} from '../../theme';
 
 class HomeScreen extends Component{
 
@@ -17,7 +18,7 @@ class HomeScreen extends Component{
               <Right />
             </Header>
             <Content>
-              <Text>
+              <Text style={{color:COLOURS.secondary}}>
                 This is Content Section
               </Text>
             </Content>
