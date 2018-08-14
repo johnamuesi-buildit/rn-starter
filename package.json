@@ -28,8 +28,8 @@
     ],
     "setupFiles": [
       "./tests/setup.js",
-      "<rootDir>/node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
       "<rootDir>/node_modules/appcenter/test/AppCenterMock.js",
+      "<rootDir>/node_modules/appcenter-analytics/test/AppCenterAnalyticsMock.js",
       "<rootDir>/node_modules/appcenter-crashes/test/AppCenterCrashesMock.js"
     ],
     "preset": "react-native"
