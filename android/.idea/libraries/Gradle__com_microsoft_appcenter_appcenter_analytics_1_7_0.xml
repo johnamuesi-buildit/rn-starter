@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.appcenter:appcenter-analytics-1.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../node_modules/appcenter-analytics/android/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter-analytics/1.7.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../node_modules/appcenter-analytics/android/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter-analytics/1.7.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.appcenter/appcenter-analytics/1.7.0/73ab30b6208b4c443e87d22150dade718385916f/appcenter-analytics-1.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
