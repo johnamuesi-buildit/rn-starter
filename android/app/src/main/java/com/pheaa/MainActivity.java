@@ -1,4 +1,4 @@
-package com.pheaa;
+package com.sarchitech.pheaa;
 
 import com.facebook.react.ReactActivity;
 
