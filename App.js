@@ -1,71 +1,20 @@
 // console.disableYellowBox = true;
+//BuildIt-FE-Tribe/PHEAA-Android
+//appcenter codepush deployment list -a BuildIt-FE-Tribe/PheAA
+//appcenter apps create -d <appDisplayName> -o <operatingSystem> -p <platform> 
 
- 
-// import React from 'react';
-// import { StyleSheet, View } from 'react-native';
-// import Ionicons from 'react-native-vector-icons/Ionicons';
+//appcenter apps create -d PHEAA-iOS -o iOS -p React-Native
+//appcenter apps create -d PHEAA-ANDROID -o Android -p React-Native
+//appcenter apps list
+
+//appcenter codepush deployment add -a john.amuesi/PHEAA-ANDROID Production
+
+//appcenter codepush deployment list -a john.amuesi/PHEAA-ANDROID
+//│ Production │ wxwtaK2hAE-LwzM5ux1vX5Mod2F1r1xXfFl8X │
 
 
-// import { Path } from 'react-native-svg'
-// import { AreaChart, Grid, LineChart, ProgressCircle } from 'react-native-svg-charts'
-
-// import * as shape from 'd3-shape'
-
-// export default class App extends React.Component {
-//   render() {
-
-//     const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
-//     const dataLineChart = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
-
-//     const Line = ({ line }) => (
-//         <Path
-//             key={'line'}
-//             d={line}
-//             stroke={'rgb(134, 65, 244)'}
-//             fill={'none'}
-//         />
-//     )
-
-//     return (
-//       <View>
-//         <AreaChart
-//             style={{ height: 200 }}
-//             data={data}
-//             contentInset={{ top: 30, bottom: 30 }}
-//             curve={shape.curveNatural}
-//             svg={{ fill: 'rgba(134, 65, 244, 0.2)' }}
-//         >
-//             <Grid/>
-//             <Line/>
-//         </AreaChart>
-//         <LineChart
-//                 style={{ height: 200 }}
-//                 data={ dataLineChart }
-//                 svg={{ stroke: 'rgb(134, 65, 244)' }}
-//                 contentInset={{ top: 20, bottom: 20 }}
-//             >
-//                 <Grid/>
-//             </LineChart>
-//             <ProgressCircle
-//                 style={ { height: 200 } }
-//                 progress={ 0.7 }
-//                 progressColor={'rgb(134, 65, 244)'}
-//             />
-//             <Io
-//       </View>
-        
-//     )
-// }
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
+//appcenter codepush deployment list -a john.amuesi/PHEAA-IOS
+//│ Production │ FQQbh1Br9aHKFv5j6inPah1nvYMHBkmrMFxL7 │
 
 
 

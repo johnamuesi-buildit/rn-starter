@@ -1012,7 +1012,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = HZ8J37BWCV;
+						DevelopmentTeam = 5R6NF68G9S;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1790,9 +1791,11 @@
 			baseConfigurationReference = 131A110216182D31BD38CA56 /* Pods-pheaa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = HZ8J37BWCV;
+				DEVELOPMENT_TEAM = 5R6NF68G9S;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
@@ -1810,8 +1813,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarchitech.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sarchitech.pheaa;
 				PRODUCT_NAME = pheaa;
+				PROVISIONING_PROFILE = "92aafaf1-d47a-4229-989c-1b4230f60d49";
+				PROVISIONING_PROFILE_SPECIFIER = "com.sarchitech.pheaa AppStore";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1821,8 +1826,10 @@
 			baseConfigurationReference = 9E9C0146535808F0B2140DE9 /* Pods-pheaa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HZ8J37BWCV;
+				DEVELOPMENT_TEAM = 5R6NF68G9S;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
@@ -1840,8 +1847,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarchitech.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sarchitech.pheaa;
 				PRODUCT_NAME = pheaa;
+				PROVISIONING_PROFILE = "92aafaf1-d47a-4229-989c-1b4230f60d49";
+				PROVISIONING_PROFILE_SPECIFIER = "com.sarchitech.pheaa AppStore";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
