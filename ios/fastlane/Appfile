@@ -6,3 +6,14 @@
 
 # app_identifier "com.your.app" # the bundle identifier of your app
 # apple_id "apple@fastlane.tools" # Your Apple ID
+
+# git_url("https://gitlab.com/johnamuesi.buildit/pheaa-starter")
+
+# type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+# app_identifier("com.pheaa.sarchitech")
+# username("john.amuesi@wipr") # Your Apple Developer Portal username
+
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options
+

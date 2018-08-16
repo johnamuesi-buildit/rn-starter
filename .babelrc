@@ -1,5 +1,9 @@
 {
+  "plugins": [
+    "syntax-dynamic-import"
+  ],
   "presets": [
+    "stage-3",
     "babel-preset-react-native-stage-0/decorator-support"
   ],
   "env": {

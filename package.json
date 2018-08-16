@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-preset-stage-3": "^6.24.1",
     "enzyme": "^3.4.1",
     "enzyme-adapter-react-16": "^1.2.0",
     "jest": "^23.4.2",
@@ -24,7 +27,7 @@
       ".src/**/.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!react-navigation|react-native|expo|native-base-shoutem-theme|native-base)"
+      "node_modules/(?!react-navigation|react-native|expo|native-base-shoutem-theme|native-base|react-native-code-push)"
     ],
     "setupFiles": [
       "./tests/setup.js",
