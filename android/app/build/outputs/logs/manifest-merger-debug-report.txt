@@ -15,6 +15,8 @@ ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/
 		INJECTED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [pheaa:react-native-code-push:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-code-push/unspecified/AndroidManifest.xml:11:5-67
+MERGED from [com.microsoft.appcenter:appcenter:1.7.0] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter/1.7.0/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/AndroidManifest.xml:21:5-66
 MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/AndroidManifest.xml:21:5-66
 MERGED from [pheaa:react-native-sentry:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-sentry/unspecified/AndroidManifest.xml:11:5-67
@@ -27,6 +29,7 @@ MERGED from [com.facebook.react:react-native:0.55.4] /Users/johnamuesi/Documents
 		ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:5:22-75
 application
 ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [pheaa:react-native-code-push:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-code-push/unspecified/AndroidManifest.xml:13:5-15:19
 MERGED from [pheaa:react-native-device-info:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-device-info/unspecified/AndroidManifest.xml:11:5-20:19
 MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/AndroidManifest.xml:23:5-19
@@ -75,10 +78,19 @@ ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/
 		ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:23:7-84
+MERGED from [pheaa:react-native-code-push:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-code-push/unspecified/AndroidManifest.xml:14:9-86
 	android:name
 		ADDED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
 INJECTED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [pheaa:react-native-code-push:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-code-push/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [pheaa:appcenter-crashes:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/appcenter-crashes/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter-crashes:1.7.0] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter-crashes/1.7.0/AndroidManifest.xml:7:5-9:41
+MERGED from [pheaa:appcenter-analytics:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/appcenter-analytics/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter-analytics:1.7.0] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter-analytics/1.7.0/AndroidManifest.xml:7:5-9:41
+MERGED from [pheaa:appcenter:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/appcenter/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter.reactnative:appcenter-react-native:1.7.1] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter.reactnative/appcenter-react-native/1.7.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter:1.7.0] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter/1.7.0/AndroidManifest.xml:7:5-9:41
 MERGED from [pheaa:react-native-svg:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-svg/unspecified/AndroidManifest.xml:5:5-7:41
 MERGED from [pheaa:react-native-device-info:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-device-info/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/AndroidManifest.xml:17:5-43
@@ -112,6 +124,11 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/johnamuesi/Documents/D
 	android:minSdkVersion
 		INJECTED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.microsoft.appcenter:appcenter:1.7.0] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter/1.7.0/AndroidManifest.xml:12:5-79
+MERGED from [pheaa:react-native-sentry:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-sentry/unspecified/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [com.microsoft.appcenter:appcenter:1.7.0] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.microsoft.appcenter/appcenter/1.7.0/AndroidManifest.xml:12:22-76
 receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
 ADDED from [pheaa:react-native-device-info:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-device-info/unspecified/AndroidManifest.xml:12:9-19:20
 	android:enabled
@@ -145,10 +162,6 @@ ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/johnamu
 		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:20:66-119
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:20:20-65
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [pheaa:react-native-sentry:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-sentry/unspecified/AndroidManifest.xml:12:5-79
-	android:name
-		ADDED from [pheaa:react-native-sentry:unspecified] /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/build/intermediates/exploded-aar/pheaa/react-native-sentry/unspecified/AndroidManifest.xml:12:22-76
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /Users/johnamuesi/Documents/DEVELOPMENT/ReactNative/PHEAA_base/pheaa/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_PHONE_STATE
