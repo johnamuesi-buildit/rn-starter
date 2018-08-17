@@ -27,7 +27,13 @@ Sentry.config('https://49858edec3e94dddabb47a44ddd8107f@sentry.io/1260032').inst
 import codePush from 'react-native-code-push';
 
 
-import RootNavigation from './src/navigation/RootNavigation'
+import RootNavigation from './src/navigation/RootNavigation';
+
+const codePushOptions = {
+  installMode: codePush.InstallMode.ON_NEXT_RESTART,
+  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME
+};
+
 
 class App extends Component {
   render () {
@@ -35,5 +41,5 @@ class App extends Component {
   }
 }
 
-export default codePush(App);
+export default codePush(codePushOptions)(App);
 // export default App;
