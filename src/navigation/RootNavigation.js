@@ -8,11 +8,22 @@ import {HomeScreen} from '../screens/HomeScreen/HomeScreen'
 import {BalanceScreen} from '../screens/BalanceScreen/BalanceScreen'
 import {ContactScreen} from '../screens/ContactScreen/ContactScreen'
 import {ListDataScreen} from '../screens/ListDataScreen/ListDataScreen'
+import {TasksScreen} from '../screens/TasksScreen/TasksScreen'
 
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 
 
 export const Tabs = createBottomTabNavigator({
+    TasksScreen:{
+        screen: TasksScreen,
+        navigationOptions:{
+            title: 'Tasks',
+            tabBarLabel:'Tasks',
+            tabBarIcon:({tintColor})=> (
+                <Ionicons name="ios-list" size={24}/>
+            )
+        }
+    },
     HomeScreen:{
         screen: HomeScreen,
         navigationOptions:{

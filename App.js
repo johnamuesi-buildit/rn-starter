@@ -1,4 +1,4 @@
-// console.disableYellowBox = true;
+console.disableYellowBox = true;
 //BuildIt-FE-Tribe/PHEAA-Android
 //appcenter codepush deployment list -a BuildIt-FE-Tribe/PheAA
 //appcenter apps create -d <appDisplayName> -o <operatingSystem> -p <platform> 
@@ -34,12 +34,15 @@ const codePushOptions = {
   checkFrequency: codePush.CheckFrequency.ON_APP_RESUME
 };
 
+import store from './src/redux/store';
+import {Provider} from 'react-redux';
 
 class App extends Component {
   render () {
-    return <RootNavigation />
+
+    return <Provider store={store}><RootNavigation /></Provider>
   }
 }
 
-export default codePush(codePushOptions)(App);
-// export default App;
+// export default codePush(codePushOptions)(App);
+export default App;

@@ -4,7 +4,18 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
 
 class HomeScreen extends Component{
 
+  componentDidMount(){
+    console.log(store);
+  }
+
+//TODO:
     
+    /**
+     *
+     *
+     * @returns
+     * @memberof HomeScreen
+     */
     render(){
         return(
             <Container>
