@@ -2,7 +2,12 @@ import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {createLogger} from 'redux-logger';
 import thunk from 'redux-thunk';
 import _ from 'lodash';
-import taskReducer from '../reducers/taskReducer';
+
+import initialState from './initialState.json';
+let state = initialState;
+
+
+import {errorReducer,taskReducer, loanBalanceReducer, transactionReducer } from '../reducers/';
 
 const logger = createLogger({
     timestamp: true
@@ -11,12 +16,16 @@ const logger = createLogger({
 const middlewares = _.compact([thunk, logger])
 
 const rootReducer = combineReducers({
-    tasks: taskReducer
+    tasks: taskReducer,
+    errors: errorReducer,
+    loanBalances: loanBalanceReducer,
+    transactions: transactionReducer
 });
 
 const storeMiddleWare = applyMiddleware(...middlewares)
 
 export default store = createStore(
     rootReducer,
-    applyMiddleware(...middlewares)
+    state,
+    storeMiddleWare
 )

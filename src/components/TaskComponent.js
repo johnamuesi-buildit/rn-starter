@@ -5,27 +5,28 @@ import {
     StyleSheet
 } from "react-native";
 import { Container, Header, Title, Content,  Button, Left, Right, Body, Icon, } from 'native-base';
-import {TaskComponent} from '../../components/TaskComponent';
+import TaskList from './TaskList';
 
 
-const mockTasks = [                               
-    {
-      id: 1,
-      title: 'Learn Redux',
-      description: 'The store, actions, and reducers, oh my!',
-      status: 'In Progress',
-    },
-    {
-      id: 2,
-      title: 'Peace on Earth',
-      description: 'No big deal.',
-      status: 'In Progress',
-    },
-  ];
 
-class TasksScreen extends Component {
+const TASK_STATUSES = ['UnStarted', 'In Progress', 'Completed'];
 
-  
+class TaskComponent extends Component {
+
+    renderTaskLists(){
+        const {tasks} = this.props;
+        return TASK_STATUSES.map(status => {
+            const statusTasks = tasks.filter(task => {
+                task.status === status
+            })
+            return <TaskList 
+                        key={status}
+                        status={status}
+                        tasks={statusTasks}
+                         />
+        })
+
+    }
 
 
     render() {
@@ -40,12 +41,13 @@ class TasksScreen extends Component {
               <Right />
             </Header>
             <Content>
+                {this.renderTaskLists()}
             </Content>
           </Container>
         );
     }
 }
-export  {TasksScreen};
+export  {TaskComponent};
 
 const styles = StyleSheet.create({
     container: {
