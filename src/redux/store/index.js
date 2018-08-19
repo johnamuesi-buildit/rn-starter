@@ -1,4 +1,4 @@
-import {createStore, combineReducers, applyMiddleware} from 'redux';
+import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
 import {createLogger} from 'redux-logger';
 import thunk from 'redux-thunk';
 import _ from 'lodash';
@@ -6,14 +6,16 @@ import _ from 'lodash';
 import initialState from './initialState.json';
 let state = initialState;
 
+import createSagaMiddleware from 'redux-saga';
+import {initSagas} from './initSagas';
 
 import {errorReducer,taskReducer, loanBalanceReducer, transactionReducer } from '../reducers/';
 
 const logger = createLogger({
     timestamp: true
 })
-
-const middlewares = _.compact([thunk, logger])
+const sagaMiddleware = createSagaMiddleware();
+const middlewares = _.compact([sagaMiddleware, thunk, logger])
 
 const rootReducer = combineReducers({
     tasks: taskReducer,
@@ -24,8 +26,12 @@ const rootReducer = combineReducers({
 
 const storeMiddleWare = applyMiddleware(...middlewares)
 
+
 export default store = createStore(
     rootReducer,
     state,
     storeMiddleWare
 )
+
+console.info('Saga middleware implemented');
+initSagas(sagaMiddleware)
