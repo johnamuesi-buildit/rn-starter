@@ -27,7 +27,7 @@
       ".src/**/.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!react-navigation|react-native|expo|native-base-shoutem-theme|native-base|react-native-code-push)"
+      "node_modules/(?!react-navigation|react-native|expo|native-base-shoutem-theme|native-base|react-native-code-push|raven-js)"
     ],
     "setupFiles": [
       "./tests/setup.js",
