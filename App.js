@@ -19,14 +19,9 @@ console.disableYellowBox = true;
 
 
 import React, {Component} from 'react';
-
 import { Sentry } from 'react-native-sentry';
-
 Sentry.config('https://49858edec3e94dddabb47a44ddd8107f@sentry.io/1260032').install();
-
 import codePush from 'react-native-code-push';
-
-
 import RootNavigation from './src/navigation/RootNavigation';
 
 const codePushOptions = {
@@ -37,12 +32,16 @@ const codePushOptions = {
 import store from './src/redux/store';
 import {Provider} from 'react-redux';
 
+import {getCurrentUserInfo} from './src/redux/actions'
+
 class App extends Component {
   render () {
-
     return <Provider store={store}><RootNavigation /></Provider>
   }
 }
 
 // export default codePush(codePushOptions)(App);
 export default App;
+
+// test saga functionality
+store.dispatch(getCurrentUserInfo('U100NorbertLeader'));

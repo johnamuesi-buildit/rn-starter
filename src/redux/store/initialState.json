@@ -1,4 +1,5 @@
 {
+    "user":null,
     "errors":[
         {
             "user":"userNotFound",

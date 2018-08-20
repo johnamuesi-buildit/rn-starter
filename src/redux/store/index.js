@@ -9,7 +9,13 @@ let state = initialState;
 import createSagaMiddleware from 'redux-saga';
 import {initSagas} from './initSagas';
 
-import {errorReducer,taskReducer, loanBalanceReducer, transactionReducer } from '../reducers/';
+import {
+    errorReducer,
+    taskReducer, 
+    loanBalanceReducer, 
+    transactionReducer,
+    userReducer 
+} from '../reducers/';
 
 const logger = createLogger({
     timestamp: true
@@ -21,7 +27,8 @@ const rootReducer = combineReducers({
     tasks: taskReducer,
     errors: errorReducer,
     loanBalances: loanBalanceReducer,
-    transactions: transactionReducer
+    transactions: transactionReducer,
+    user: userReducer
 });
 
 const storeMiddleWare = applyMiddleware(...middlewares)
