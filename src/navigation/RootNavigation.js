@@ -8,7 +8,7 @@ import {HomeScreen} from '../screens/HomeScreen/HomeScreen'
 import {BalanceScreen} from '../screens/BalanceScreen/BalanceScreen'
 import {ContactScreen} from '../screens/ContactScreen/ContactScreen'
 import {ListDataScreen} from '../screens/ListDataScreen/ListDataScreen'
-import {TasksScreen} from '../screens/TasksScreen/TasksScreen'
+import TasksScreen from '../screens/TasksScreen/TasksScreen'
 
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 

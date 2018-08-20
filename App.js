@@ -44,4 +44,4 @@ class App extends Component {
 export default App;
 
 // test saga functionality
-store.dispatch(getCurrentUserInfo('U100NorbertLeader'));
+// store.dispatch(getCurrentUserInfo('U100NorbertLeader'));

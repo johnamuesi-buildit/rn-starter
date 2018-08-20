@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { 
     View,
     Text,
@@ -7,28 +7,20 @@ import {
 import { Container, Header, Title, Content,  Button, Left, Right, Body, Icon, } from 'native-base';
 import {TaskComponent} from '../../components/TaskComponent';
 
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {getCurrentUserInfo} from '../../redux/actions/'
+import store from '../../redux/store';
+class TasksScreen extends PureComponent {
 
-const mockTasks = [                               
-    {
-      id: 1,
-      title: 'Learn Redux',
-      description: 'The store, actions, and reducers, oh my!',
-      status: 'In Progress',
-    },
-    {
-      id: 2,
-      title: 'Peace on Earth',
-      description: 'No big deal.',
-      status: 'In Progress',
-    },
-  ];
-
-class TasksScreen extends Component {
-
-  
+  componentDidMount(){
+    store.dispatch(getCurrentUserInfo('jefflovessaga'));
+    console.log("THE PROPS", this.props);
+  }
 
 
     render() {
+
         return (
             <Container>
             <Header>
@@ -40,17 +32,32 @@ class TasksScreen extends Component {
               <Right />
             </Header>
             <Content>
+          yar
+              <View style={styles.container}>
+                  <Text> Name:{this.props.user} </Text>
+              </View>
             </Content>
           </Container>
         );
     }
 }
-export  {TasksScreen};
+
+const mapStateToProps = (state) => {
+  console.log("STATE!!!!", state)
+  return {
+    user: state.user.currentUser
+  }
+}
+
+const mapDispatchToProps = () => {
+
+}
+
+export  default  connect(mapStateToProps)(TasksScreen);
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+     
     }
 });
