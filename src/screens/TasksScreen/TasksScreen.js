@@ -9,13 +9,17 @@ import {TaskComponent} from '../../components/TaskComponent';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getCurrentUserInfo} from '../../redux/actions/'
+import {
+  getCurrentUserInfo,
+  getCurrentUserInfoSuccess
+} from '../../redux/actions/'
 import store from '../../redux/store';
 class TasksScreen extends PureComponent {
 
   componentDidMount(){
-    store.dispatch(getCurrentUserInfo('jefflovessaga'));
+ //   store.dispatch(getCurrentUserInfo('jefflovessaga'));
     console.log("THE PROPS", this.props);
+   this.props.getUser('U100NorbertLeader')
   }
 
 
@@ -34,7 +38,8 @@ class TasksScreen extends PureComponent {
             <Content>
           yar
               <View style={styles.container}>
-                  <Text> Name:{this.props.user} </Text>
+                  <Text> Name:{this.props.user.firstName} </Text>
+                  <Text> Name:{this.props.user.lastName} </Text>
               </View>
             </Content>
           </Container>
@@ -49,11 +54,18 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = () => {
+const mapDispatchToProps = (dispatch) => {
+  return {
+  //  getUser: () => (dispatch(getCurrentUserInfo()))
+  // getCurrentUserInfo: () => bindActionCreators(getCurrentUserInfo, dispatch)
+   getUser : (user) => {
+     dispatch(getCurrentUserInfo(user))
+   }
 
+  }
 }
 
-export  default  connect(mapStateToProps)(TasksScreen);
+export  default  connect(mapStateToProps, mapDispatchToProps)(TasksScreen);
 
 const styles = StyleSheet.create({
     container: {

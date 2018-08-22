@@ -2,25 +2,35 @@ import {delay} from 'redux-saga';
 import { take, put, call, apply} from 'redux-saga/effects';
 import axios from 'axios';
 
-
-import {GET_CURRENT_USER_INFO} 
+import {GET_CURRENT_USER_INFO,
+    GET_CURRENT_USER_INFO_SUCCESS,
+    setCurrentUser
+    } 
 from '../actions/actionTypes';
 
-import {setCurrentUser} from '../actions';
+import {API_URL} from '../../constants';
+
+const getUserInfo = (id) => {
+       return axios({
+            method:"GET",
+            url:`${API_URL}/currentUser/${id}`,
+        }).then(response => {
+            console.log("THE AXIOS RESPONSE", response.data);
+            return response.data
+        }).catch(e => {
+            console.log(e.message)
+        }) 
+}
 
 export function* currentUserSaga () {
     const { payload: id } = yield take (GET_CURRENT_USER_INFO);
-    const response = yield axios({
-        method:"GET",
-        url:`http://localhost:3000/currentUser/${id}`,
-    })
 
+    console.log('THE ID from take:::', id);
+    const data = yield call (getUserInfo,id);
+    console.log("Yielded Data", data);
+
+    yield put({type: GET_CURRENT_USER_INFO_SUCCESS, payload: data});
     console.info("ID: ", id);
-    console.log('Data:', response);
 
 }
 
- // while(true){
-    //     yield delay(1000);
-    //     console.info('User Saga loop')
-    // }

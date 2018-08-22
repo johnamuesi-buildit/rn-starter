@@ -4,7 +4,8 @@ import thunk from 'redux-thunk';
 import _ from 'lodash';
 
 import initialState from './initialState.json';
-let state = initialState;
+// let state = initialState;
+let state = {};
 
 import createSagaMiddleware from 'redux-saga';
 import {initSagas} from './initSagas';
