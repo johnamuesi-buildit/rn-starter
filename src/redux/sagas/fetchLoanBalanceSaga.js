@@ -28,5 +28,5 @@ export function* fetchLoanBalanceSaga(){
     const response = yield call (getUserLoanBalance,id);
     // console.log("LOAN BALANCES") 
     yield put({type: GET_LOAN_BALANCES, payload: response})
-    console.log("BALANCES HEERE:" , response);
+    console.log("BALANCES HERE:" , response);
 }  
