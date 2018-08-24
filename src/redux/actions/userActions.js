@@ -2,7 +2,7 @@ import {
  GET_CURRENT_USER_INFO,
  SET_CURRENT_USER,
  GET_CURRENT_USER_INFO_SUCCESS,
- SET_LOAN_BALANCE,
+ SET_LOAN_BALANCES,
  GET_LOAN_BALANCES
  
 } from './actionTypes'
@@ -27,9 +27,10 @@ export const getCurrentUserInfoSuccess = (user) => {
      }
 }
 
-export const setLoanBalance = () => {
+export const setLoanBalances = (loanBalances) => {
     return{
-        type: SET_CURRENT_USER_INFO
+        type: SET_LOAN_BALANCES,
+        payload: loanBalances
     }
 }
 

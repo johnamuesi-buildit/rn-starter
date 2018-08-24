@@ -18,7 +18,7 @@ class TasksScreen extends PureComponent {
 
   componentDidMount(){
  //   store.dispatch(getCurrentUserInfo('jefflovessaga'));
-    console.log("THE PROPS", this.props);
+    // console.log("THE PROPS", this.props);
    this.props.getUser('U100NorbertLeader')
   }
 
@@ -31,7 +31,7 @@ class TasksScreen extends PureComponent {
               <Left/>
                
               <Body>
-                <Title>Tasks</Title>
+                <Title>Demo Shaun</Title>
               </Body>
               <Right />
             </Header>
@@ -40,6 +40,12 @@ class TasksScreen extends PureComponent {
               <View style={styles.container}>
                   <Text> Name:{this.props.user.firstName} </Text>
                   <Text> Name:{this.props.user.lastName} </Text>
+                  <Text> Loan Balances: </Text>
+                  <Text> List:
+                  {
+                      //loop the
+                  } 
+                  </Text>
               </View>
             </Content>
           </Container>
@@ -48,9 +54,10 @@ class TasksScreen extends PureComponent {
 }
 
 const mapStateToProps = (state) => {
-  console.log("STATE!!!!", state)
+  // console.log("STATE!!!!", state)
   return {
-    user: state.user.currentUser
+    user: state.user.currentUser,
+    loanBalances:state.loanBalances
   }
 }
 

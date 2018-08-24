@@ -15,22 +15,22 @@ const getUserInfo = (id) => {
             method:"GET",
             url:`${API_URL}/currentUser/${id}`,
         }).then(response => {
-            console.log("THE AXIOS RESPONSE", response.data);
+            // console.log("THE AXIOS RESPONSE", response.data);
             return response.data
         }).catch(e => {
-            console.log(e.message)
+            // console.log(e.message)
         }) 
 }
 
 export function* currentUserSaga () {
     const { payload: id } = yield take (GET_CURRENT_USER_INFO);
 
-    console.log('THE ID from take:::', id);
+    // console.log('THE ID from take:::', id);
     const data = yield call (getUserInfo,id);
-    console.log("Yielded Data", data);
+    // console.log("Yielded Data", data);
 
     yield put({type: GET_CURRENT_USER_INFO_SUCCESS, payload: data});
-    console.info("ID: ", id);
+    // console.info("ID: ", id);
 
 }
 

@@ -6,4 +6,4 @@ export const GET_TRANSACTION = 'getTransaction';
 export const GET_CURRENT_USER_INFO = 'getCurrentUserInfo';
 export const GET_CURRENT_USER_INFO_SUCCESS = 'getCurrentUserInfoSuccess';
 export const SET_CURRENT_USER = 'setCurrentUser';
-export const SET_LOAN_BALANCE = 'setLoanBalance';
+export const SET_LOAN_BALANCES = 'setLoanBalances';

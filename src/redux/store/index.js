@@ -41,5 +41,5 @@ export default store = createStore(
     storeMiddleWare
 )
 
-console.info('Saga middleware implemented');
+// console.info('Saga middleware implemented');
 initSagas(sagaMiddleware)

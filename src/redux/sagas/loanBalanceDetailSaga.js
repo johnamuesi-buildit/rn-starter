@@ -1,20 +1,43 @@
-import {take, fork, put} from 'redux-saga/effects'
+import {take, fork, put, select} from 'redux-saga/effects'
+import {loanBalanceReducer} from '../reducers'
 import axios from 'axios';
+import store from '../store'
 
-import {GET_CURRENT_USER_INFO,
-    GET_CURRENT_USER_INFO_SUCCESS,
-    setCurrentUser,
-    GET_LOAN_BALANCES
+import {SET_LOAN_BALANCES
     } 
 from '../actions/actionTypes';
 
-loadBalanceDetails = () => {
- 
+import {
+    setLoanBalances
+    
+    } 
+from '../actions/';
+import { arrayOfDeffered } from 'redux-saga/utils';
+
+
+loadBalanceDetails = (balance) => {
+  
+    console.info("BALANCE ITEM", balance)
 }
 
 export function* loanBalanceDetailSaga(){
-    const { balances } = yield take (GET_LOAN_BALANCES); // take effect pauses execution until action is dispatched
-    console.log("LOAD BALANCES::", balances);
-    yield;
-  //  yield balances.map( balance =>  fork(loadBalanceDetails, balance))
+    const balanceList = (state) => state.loanBalances;
+    const balances = yield select (balanceList);
+    console.log("FUCKING WORK!!!!", balances);
+
+    //??
+    // console.log(getLoanBalancesList);
+    // console.log('BALANCE LIST::::', getLoanBalancesList)
+   // const balanceList = yield take()
+    // const balances = yield select (getLoanBalances); // string rather than constamt
+  // console.log("loanBalanceDetailSaga::: ", balances)
+    // let task = []  
+    // for(let i=0; i<balances.length; i++){
+    //      task[i] = yield fork(loadBalanceDetails, balances[i])
+    // }       
+    // //I can't see this console
+    // yield call(delay, 1000)
+
+    // its empty to begin then gets poulated on a look up basd on the userid
+    // look at the start of console then after
 }
