@@ -19,7 +19,7 @@ class TasksScreen extends PureComponent {
   componentDidMount(){
  //   store.dispatch(getCurrentUserInfo('jefflovessaga'));
     console.log("THE PROPS", this.props);
-   this.props.getUser('jefflovessaga')
+   this.props.getUser('U100NorbertLeader')
   }
 
 

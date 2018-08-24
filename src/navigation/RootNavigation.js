@@ -17,10 +17,10 @@ export const Tabs = createBottomTabNavigator({
     TasksScreen:{
         screen: TasksScreen,
         navigationOptions:{
-            title: 'Tasks',
-            tabBarLabel:'Tasks',
+            
+            tabBarLabel:'Home',
             tabBarIcon:({tintColor})=> (
-                <Ionicons name="ios-list" size={24}/>
+                <Ionicons name="ios-list" size={25}/>
             )
         }
     },
@@ -28,9 +28,9 @@ export const Tabs = createBottomTabNavigator({
         screen: HomeScreen,
         navigationOptions:{
             title: 'Home',
-            tabBarLabel:'Home',
+            tabBarLabel:'Lizzie',
             tabBarIcon:({tintColor})=> (
-                <Ionicons name="ios-home" size={24}/>
+                <Ionicons name="ios-home" size={25}/>
             )
         }
     },
@@ -40,7 +40,7 @@ export const Tabs = createBottomTabNavigator({
         navigationOptions:{
             tabBarLabel:'Balance',
             tabBarIcon:({tintColor})=> (
-                <Ionicons name="ios-cash" size={24}/>
+                <Ionicons name="ios-cash" size={25}/>
             )
         }
     },

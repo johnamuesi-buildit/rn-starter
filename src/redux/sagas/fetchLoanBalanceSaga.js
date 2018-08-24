@@ -5,7 +5,7 @@ import {API_URL} from '../../constants';
 import {GET_CURRENT_USER_INFO,
     GET_CURRENT_USER_INFO_SUCCESS,
     setCurrentUser,
-    GET_LOAN_BALANCES
+    GET_LOAN_BALANCES,
     } 
 from '../actions/actionTypes';
 
@@ -28,5 +28,5 @@ export function* fetchLoanBalanceSaga(){
     const response = yield call (getUserLoanBalance,id);
     // console.log("LOAN BALANCES") 
     yield put({type: GET_LOAN_BALANCES, payload: response})
-    console.log("BALANCES HERE:" , response);
+    console.log("END BALANCES HERE:" , response);
 }  
