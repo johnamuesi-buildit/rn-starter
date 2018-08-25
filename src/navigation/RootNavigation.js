@@ -18,7 +18,7 @@ export const Tabs = createBottomTabNavigator({
         screen: TasksScreen,
         navigationOptions:{
             
-            tabBarLabel:'Shaun',
+            tabBarLabel:'Loans',
             tabBarIcon:({tintColor})=> (
                 <Ionicons name="ios-list" size={25}/>
             )

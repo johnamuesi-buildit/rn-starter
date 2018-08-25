@@ -4,7 +4,7 @@ import {
     Text,
     StyleSheet
 } from "react-native";
-import { Container, Header, Title, Content,  Button, Left, Right, Body, Icon, } from 'native-base';
+import {List, ListItem,Item, Card, CardItem, Container, Header, Title, Content,  Button, Left, Right, Body, Icon, } from 'native-base';
 import {TaskComponent} from '../../components/TaskComponent';
 
 import {connect} from 'react-redux';
@@ -18,7 +18,7 @@ class TasksScreen extends PureComponent {
 
   componentDidMount(){
  //   store.dispatch(getCurrentUserInfo('jefflovessaga'));
-    // console.log("THE PROPS", this.props);
+   log("PROPS", this.props);
    this.props.getUser('U100NorbertLeader')
   }
 
@@ -31,32 +31,45 @@ class TasksScreen extends PureComponent {
               <Left/>
                
               <Body>
-                <Title>Demo Shaun</Title>
+                <Title>Loan Balances</Title>
               </Body>
               <Right />
             </Header>
-            <Content>
-          yar
-              <View style={styles.container}>
-                  <Text> Name:{this.props.user.firstName} </Text>
+            <Content padder
+              contentContainerStyle={styles.container}>
+             
+          
+              <Card 
+                style={{flex:1}}
+              >
+                <Text> Name:{this.props.user.firstName} </Text>
                   <Text> Name:{this.props.user.lastName} </Text>
-                  <Text> Loan Balances: </Text>
-                  <Text> List:
+                
+                 
+                  <Content> 
                   {
                       //loop the
                       this.props.loanBalances.map((balance, index) => {
                         return(
                           
-                          <View
-                          key={index}
-                          ><Text >{balance.School}</Text></View>
-                        // perfect i can do the rest
-                        // BIG thanks, and i will kill fork!!!
+                          <Card key={index} 
+                          style={styles.balanceDetails}>
+                          key={index}>
+                          
+                        
+
+                          <Text>School: {balance.School}</Text> 
+                          <Item><Text>Amount: {balance.amount}</Text></Item>
+                          <Item><Text>Completed: {balance.completed}</Text></Item>
+                          <Item><Text>id: {balance.id}</Text></Item>
+                          
+                          </Card>
+                      
                         )
                       })
                   } 
-                  </Text>
-              </View>
+                  </Content>
+              </Card>
             </Content>
           </Container>
         );
@@ -87,6 +100,10 @@ export  default  connect(mapStateToProps, mapDispatchToProps)(TasksScreen);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-     
+
+    },
+    balanceDetails:{
+      alignItems: 'flex-start',
+      padding:10,
     }
 });

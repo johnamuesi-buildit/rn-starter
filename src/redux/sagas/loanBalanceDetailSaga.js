@@ -24,7 +24,7 @@ loadBalanceDetails = (balance) => {
 export function* loanBalanceDetailSaga(){
     const balanceList = (state) => state.loanBalances;
     const balances = yield select (balanceList);
-    log('SPARTA  ', 'balances');
+    log('Balances  ', balances);
 
 
     //??
@@ -40,6 +40,4 @@ export function* loanBalanceDetailSaga(){
     // //I can't see this console
     // yield call(delay, 1000)
 
-    // its empty to begin then gets poulated on a look up basd on the userid
-    // look at the start of console then after
 }
