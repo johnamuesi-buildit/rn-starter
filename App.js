@@ -1,4 +1,7 @@
 console.disableYellowBox = true;
+import {log} from './helpers';
+global.log = log;
+
 
 //BuildIt-FE-Tribe/PHEAA-Android
 //appcenter codepush deployment list -a BuildIt-FE-Tribe/PheAA

@@ -44,6 +44,16 @@ class TasksScreen extends PureComponent {
                   <Text> List:
                   {
                       //loop the
+                      this.props.loanBalances.map((balance, index) => {
+                        return(
+                          
+                          <View
+                          key={index}
+                          ><Text >{balance.School}</Text></View>
+                        // perfect i can do the rest
+                        // BIG thanks, and i will kill fork!!!
+                        )
+                      })
                   } 
                   </Text>
               </View>

@@ -9,13 +9,14 @@ import {GET_CURRENT_USER_INFO,
 from '../actions/actionTypes';
 
 import {API_URL} from '../../constants';
+// import {log} from '../../../helpers';
 
 const getUserInfo = (id) => {
        return axios({
             method:"GET",
             url:`${API_URL}/currentUser/${id}`,
         }).then(response => {
-            // console.log("THE AXIOS RESPONSE", response.data);
+            log("THE AXIOS RESPONSE", response.data);
             return response.data
         }).catch(e => {
             // console.log(e.message)
@@ -30,7 +31,7 @@ export function* currentUserSaga () {
     // console.log("Yielded Data", data);
 
     yield put({type: GET_CURRENT_USER_INFO_SUCCESS, payload: data});
-    // console.info("ID: ", id);
+   log("ID: ", id);
 
 }
 

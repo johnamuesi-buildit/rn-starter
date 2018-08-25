@@ -1,7 +1,8 @@
 import {take, fork, put, select} from 'redux-saga/effects'
 import {loanBalanceReducer} from '../reducers'
 import axios from 'axios';
-import store from '../store'
+import store from '../store';
+import {log} from '../../../helpers';
 
 import {SET_LOAN_BALANCES
     } 
@@ -23,7 +24,8 @@ loadBalanceDetails = (balance) => {
 export function* loanBalanceDetailSaga(){
     const balanceList = (state) => state.loanBalances;
     const balances = yield select (balanceList);
-    console.log("FUCKING WORK!!!!", balances);
+    log('SPARTA  ', 'balances');
+
 
     //??
     // console.log(getLoanBalancesList);
