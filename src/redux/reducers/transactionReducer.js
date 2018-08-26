@@ -1,16 +1,24 @@
-import {GET_TRANSACTION} 
+import {GET_TRANSACTIONS,
+    GET_TRANSACTIONS_SUCCESS} 
 from '../actions/actionTypes';
 
 const INITIAL_STATE = {
-    transactions:[]
+    transactions:[],
+    isLoading:false
 }
 
 export default {loanBalanceReducer} = (state = INITIAL_STATE, action) => {
     switch(action.type){
-        case GET_TRANSACTION:
+        case GET_TRANSACTIONS:
         return {
             ...state,
-            transactions: action.payload
+            isLoading:true
+        }
+        case GET_TRANSACTIONS_SUCCESS:
+        return {
+            ...state,
+            isLoading:false,
+            payload:transactions
         }
         default:
         return state;

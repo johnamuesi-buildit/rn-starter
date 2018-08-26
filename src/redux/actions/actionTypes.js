@@ -2,6 +2,7 @@ export const CREATE_TASK = 'createTask';
 export const GET_ERRORS = 'getErrors';
 export const CLEAR_ERRORS = 'clearErrors';
 export const GET_LOAN_BALANCES = 'getLoanBalances';
+export const GET_TRANSACTIONS_SUCCESS = 'getTransactionsSuccess';
 export const GET_TRANSACTION = 'getTransaction';
 export const GET_CURRENT_USER_INFO = 'getCurrentUserInfo';
 export const GET_CURRENT_USER_INFO_SUCCESS = 'getCurrentUserInfoSuccess';
