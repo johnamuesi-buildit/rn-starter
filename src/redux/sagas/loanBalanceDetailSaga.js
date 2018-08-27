@@ -4,16 +4,14 @@ import axios from 'axios';
 import store from '../store';
 import {log} from '../../../helpers';
 
-import {SET_LOAN_BALANCES
-    } 
-from '../actions/actionTypes';
+import  * as TYPES from '../actions/actionTypes';
+
 
 import {
     setLoanBalances
     
     } 
 from '../actions/';
-import { arrayOfDeffered } from 'redux-saga/utils';
 
 
 loadBalanceDetails = (balance) => {

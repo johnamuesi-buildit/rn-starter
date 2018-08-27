@@ -5,3 +5,4 @@ export {setLoanBalances} from './userActions';
 export {getLoanBalances} from './userActions';
 export {getTransactionsSuccess} from './transactionActions';
 export {getTransactions} from './transactionActions';
+export {confirmationLoadMore} from './transactionActions';

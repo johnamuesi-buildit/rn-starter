@@ -20,7 +20,7 @@ export default {loanBalanceReducer} = (state = INITIAL_STATE, action) => {
         //     isLoading:false,
         //     payload:transactions
         // }
-        return [
+        return [ 
             ...state,
             ...action.payload,
         ];

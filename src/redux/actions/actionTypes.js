@@ -9,3 +9,4 @@ export const GET_CURRENT_USER_INFO = 'getCurrentUserInfo';
 export const GET_CURRENT_USER_INFO_SUCCESS = 'getCurrentUserInfoSuccess';
 export const SET_CURRENT_USER = 'setCurrentUser';
 export const SET_LOAN_BALANCES = 'setLoanBalances';
+export const CONFIRMATION = 'confirmation';

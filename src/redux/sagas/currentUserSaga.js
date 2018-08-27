@@ -2,11 +2,8 @@ import {delay} from 'redux-saga';
 import { take, put, call, apply} from 'redux-saga/effects';
 import axios from 'axios';
 
-import {GET_CURRENT_USER_INFO,
-    GET_CURRENT_USER_INFO_SUCCESS,
-    setCurrentUser
-    } 
-from '../actions/actionTypes';
+import  * as TYPES from '../actions/actionTypes';
+
 
 import {API_URL} from '../../constants';
 // import {log} from '../../../helpers';
@@ -24,11 +21,11 @@ const getUserInfo = (id) => {
 }
 
 export function* currentUserSaga () {
-    const { payload: id } = yield take (GET_CURRENT_USER_INFO);
+    const { payload: id } = yield take (TYPES.GET_CURRENT_USER_INFO);
 
     const data = yield call (getUserInfo,id);
 
-    yield put({type: GET_CURRENT_USER_INFO_SUCCESS, payload: data});
+    yield put({type: TYPES.GET_CURRENT_USER_INFO_SUCCESS, payload: data});
    log("ID: ", id);
 
 }
