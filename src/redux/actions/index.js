@@ -6,3 +6,5 @@ export {getLoanBalances} from './userActions';
 export {getTransactionsSuccess} from './transactionActions';
 export {getTransactions} from './transactionActions';
 export {confirmationLoadMore} from './transactionActions';
+export {getTasks} from './taskActions';
+export {getTasksSuccess} from './taskActions';

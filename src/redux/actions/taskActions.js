@@ -1,15 +1,21 @@
-import {CREATE_TASK} from  './actionTypes';
+import * as TYPES from './actionTypes';
+
 
 export const createTask = () => {
-
-    let task = {}
-
     return {
-        type: CREATE_TASK,
+        type: TYPES.CREATE_TASK,
         payload: task
     }
 }
 
-export const getTask = () => {
-
+export const getTasks = () => {
+    return {
+        type: TYPES.GET_TASKS,
+    }
+}
+export const getTasksSuccess = (tasks) => {
+    return {
+        type: TYPES.GET_TASKS,
+        payload: tasks
+    }
 }

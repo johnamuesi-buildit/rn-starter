@@ -26,7 +26,8 @@ import {
   getCurrentUserInfo,
   getCurrentUserInfoSuccess,
   getTransactions,
-  confirmationLoadMore
+  confirmationLoadMore,
+  getTasks
 } from '../../redux/actions/'
 import store from '../../redux/store'
 class TasksScreen extends PureComponent {
@@ -85,6 +86,9 @@ class TasksScreen extends PureComponent {
             <Button onPress={() => this.handleLoadMore()}>
               <Text>Get more transactions</Text>
             </Button>
+            <Button onPress={() => this.props.loadTasks()}>
+              <Text>Load Tasks </Text>
+            </Button>
             <Text> Name:{this.props.user.firstName} </Text>
             <Text> Name:{this.props.user.lastName} </Text>
 
@@ -132,7 +136,9 @@ const mapStateToProps = state => {
   // console.log("STATE!!!!", state)
   return {
     user: state.user.currentUser,
-    loanBalances: state.loanBalances
+    loanBalances: state.loanBalances,
+    transactions: state.transactions,
+    tasks: state.tasks
   }
 }
 
@@ -148,6 +154,9 @@ const mapDispatchToProps = dispatch => {
     },
     moreTransactions: () => {
       dispatch(getTransactions())
+    },
+    loadTasks: () => {
+      dispatch(getTasks())
     }
   }
 }

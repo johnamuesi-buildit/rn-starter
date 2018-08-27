@@ -1,4 +1,6 @@
 export const CREATE_TASK = 'createTask';
+export const GET_TASKS = 'getTasks';
+export const GET_TASKS_SUCCESS = 'getTasksSuccess';
 export const GET_ERRORS = 'getErrors';
 export const CLEAR_ERRORS = 'clearErrors';
 export const GET_LOAN_BALANCES = 'getLoanBalances';
