@@ -26,9 +26,7 @@ const getUserInfo = (id) => {
 export function* currentUserSaga () {
     const { payload: id } = yield take (GET_CURRENT_USER_INFO);
 
-    // console.log('THE ID from take:::', id);
     const data = yield call (getUserInfo,id);
-    // console.log("Yielded Data", data);
 
     yield put({type: GET_CURRENT_USER_INFO_SUCCESS, payload: data});
    log("ID: ", id);

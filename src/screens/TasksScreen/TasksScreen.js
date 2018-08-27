@@ -11,17 +11,16 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {
   getCurrentUserInfo,
-  getCurrentUserInfoSuccess
+  getCurrentUserInfoSuccess,
+  getTransactions
 } from '../../redux/actions/'
 import store from '../../redux/store';
 class TasksScreen extends PureComponent {
 
   componentDidMount(){
- //   store.dispatch(getCurrentUserInfo('jefflovessaga'));
    log("PROPS", this.props);
    this.props.getUser('U100NorbertLeader')
   }
-
 
     render() {
 
@@ -42,6 +41,13 @@ class TasksScreen extends PureComponent {
               <Card 
                 style={{flex:1}}
               >
+                <Button
+                  onPress={()=> this.props.moreTransactions()}
+                >
+                  <Text>
+                    Get more transactions
+                  </Text>
+                </Button>
                 <Text> Name:{this.props.user.firstName} </Text>
                   <Text> Name:{this.props.user.lastName} </Text>
                 
@@ -55,9 +61,7 @@ class TasksScreen extends PureComponent {
                           <Card key={index} 
                           style={styles.balanceDetails}>
                           key={index}>
-                          
-                        
-
+                 
                           <Text>School: {balance.School}</Text> 
                           <Item><Text>Amount: {balance.amount}</Text></Item>
                           <Item><Text>Completed: {balance.completed}</Text></Item>
@@ -90,7 +94,11 @@ const mapDispatchToProps = (dispatch) => {
   // getCurrentUserInfo: () => bindActionCreators(getCurrentUserInfo, dispatch)
    getUser : (user) => {
      dispatch(getCurrentUserInfo(user))
+   },
+   moreTransactions: () => {
+     dispatch(getTransactions())
    }
+   
 
   }
 }

@@ -15,11 +15,15 @@ export default {loanBalanceReducer} = (state = INITIAL_STATE, action) => {
             isLoading:true
         }
         case GET_TRANSACTIONS_SUCCESS:
-        return {
+        // return { // ask Norbert why errors out, cant see at moment
+        //     ...state,
+        //     isLoading:false,
+        //     payload:transactions
+        // }
+        return [
             ...state,
-            isLoading:false,
-            payload:transactions
-        }
+            ...action.payload,
+        ];
         default:
         return state;
     }
