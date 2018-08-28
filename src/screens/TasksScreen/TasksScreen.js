@@ -32,7 +32,7 @@ import {
 import store from '../../redux/store'
 class TasksScreen extends PureComponent {
   componentDidMount() {
-    log('PROPS', this.props)
+ //   log('PROPS', this.props)
     this.props.getUser('U100NorbertLeader')
   }
 

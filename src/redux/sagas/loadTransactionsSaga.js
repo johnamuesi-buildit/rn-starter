@@ -2,7 +2,6 @@
 import {delay} from 'redux-saga';
 import { take, put, call, apply, race, all, select} from 'redux-saga/effects'; 
 import axios from 'axios';
-
 import  * as TYPES from '../actions/actionTypes';
 
 import {API_URL} from '../../constants';
@@ -12,10 +11,10 @@ const getTransactions = ()  => {
          method:"GET",
          url:`${API_URL}/transactions`,
      }).then(response => {
-         log("THE AXIOS RESPONSE", response.data);
+     log("THE AXIOS RESPONSE", response.data);
          return response.data
      }).catch(e => {
-         log(e.message)
+      //   log(e.message)
      }) 
 }
 const getTasks = ()  => {
@@ -32,8 +31,9 @@ const getTasks = ()  => {
 
 export function* loadTransactions(action){
     try
-    {   const selector = yield select(state => state.transactions);
-        console.log("Transactions before yield", selector)
+    {   
+        //const selector = yield select(state => state.transactions);
+     //   console.log("Transactions before yield", selector)
         yield take(TYPES.CONFIRMATION) // take, blocking effect
 
         const transactions = yield call(getTransactions); // call blocking effect in yield waits for data to return 
@@ -51,7 +51,7 @@ export function* loadTasks(action){
         log("LOAD TASKS", tasks)
         yield put({type: TYPES.GET_TASKS_SUCCESS, payload: tasks})
     }catch (e){
-        log(e)
+  //      log(e)
     }
 }
 

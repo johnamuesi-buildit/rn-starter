@@ -15,5 +15,5 @@ loadBalanceDetails = balance => {
 export function * loanBalanceDetailSaga () {
   const balanceList = state => state.loanBalances
   const balances = yield select(balanceList)
-  log('Balances  ', balances)
+ // log('Balances  ', balances)
 }
