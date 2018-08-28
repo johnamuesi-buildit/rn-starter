@@ -12,3 +12,8 @@ export const GET_CURRENT_USER_INFO_SUCCESS = 'getCurrentUserInfoSuccess';
 export const SET_CURRENT_USER = 'setCurrentUser';
 export const SET_LOAN_BALANCES = 'setLoanBalances';
 export const CONFIRMATION = 'confirmation';
+
+
+export const LOGIN_REQUESTING = 'loginRequesting';
+export const LOGIN_SUCCESS = 'loginSuccess';
+export const LOGIN_ERROR = 'loginError';

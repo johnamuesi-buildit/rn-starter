@@ -15,7 +15,8 @@ import {
     taskReducer, 
     loanBalanceReducer, 
     transactionReducer,
-    userReducer 
+    userReducer,
+    authenticationReducer 
 } from '../reducers/';
 
 const logger = createLogger({
@@ -29,7 +30,8 @@ const rootReducer = combineReducers({
     errors: errorReducer,
     loanBalances: loanBalanceReducer,
     transactions: transactionReducer,
-    user: userReducer
+    user: userReducer,
+    auth:authenticationReducer
 });
 
 const storeMiddleWare = applyMiddleware(...middlewares)

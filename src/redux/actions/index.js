@@ -8,3 +8,8 @@ export {getTransactions} from './transactionActions';
 export {confirmationLoadMore} from './transactionActions';
 export {getTasks} from './taskActions';
 export {getTasksSuccess} from './taskActions';
+
+export {loginRequesting} from './authenticationActions';
+export {loginSuccess} from './authenticationActions';
+export {loginError} from './authenticationActions';
+
