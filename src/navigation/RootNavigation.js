@@ -2,22 +2,36 @@ import React, {Component} from 'react';
 // https://oblador.github.io/react-native-vector-icons/
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-
+// import {LoginScreen} from './routes';
 
 import {HomeScreen} from '../screens/HomeScreen/HomeScreen'
 import {BalanceScreen} from '../screens/BalanceScreen/BalanceScreen'
 import {ContactScreen} from '../screens/ContactScreen/ContactScreen'
 import {ListDataScreen} from '../screens/ListDataScreen/ListDataScreen'
 import TasksScreen from '../screens/TasksScreen/TasksScreen'
+import LoginScreen from '../screens/LoginScreen/LoginScreen'
 
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 
 
 export const Tabs = createBottomTabNavigator({
+
+    LoginScreen:{
+        screen: LoginScreen,
+        navigationOptions:{
+
+            tabBarLabel:'Login',
+            tabBarIcon:({tintColor})=> (
+                <Ionicons name="ios-list" size={25}/>
+            )
+        }
+    
+    },
+
     TasksScreen:{
         screen: TasksScreen,
         navigationOptions:{
-            
+
             tabBarLabel:'Loans',
             tabBarIcon:({tintColor})=> (
                 <Ionicons name="ios-list" size={25}/>
@@ -27,8 +41,7 @@ export const Tabs = createBottomTabNavigator({
     HomeScreen:{
         screen: HomeScreen,
         navigationOptions:{
-            title: 'Home',
-            tabBarLabel:'Lizzie',
+            tabBarLabel:'Home',
             tabBarIcon:({tintColor})=> (
                 <Ionicons name="ios-home" size={25}/>
             )
