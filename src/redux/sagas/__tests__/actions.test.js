@@ -13,7 +13,6 @@ describe('Getting Transactions', () => {
         const gen = loadTransactions();
         let value;
         value = gen.next().value;
-
         expect(value).toEqual(take(TYPES.CONFIRMATION));
 
         const { CALL: { fn } } = gen.next().value;

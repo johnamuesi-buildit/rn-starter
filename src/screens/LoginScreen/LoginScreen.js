@@ -20,17 +20,15 @@ import {
   Label,
   Picker,
   Text
-} from 'native-base'
+} from 'native-base';
+import { connect } from 'react-redux'  
 
-import { withFormik }  from 'formik'
-import Yup from 'yup'
-import { Formik } from 'formik';
+import { withFormik } from 'formik'
+import * as Yup from 'yup';
 
-const LoginForm = ({
-    values,
-    handleChange,
-    handleSubmit
-}) => (
+const LoginForm = ({ values, errors, touched, handleChange, handleSubmit, isSubmitting }) => {
+  log(JSON.stringify(errors));
+  return (
   <Container>
     <Header>
       <Left />
@@ -41,46 +39,65 @@ const LoginForm = ({
       <Right />
     </Header>
     <Content padder>
-      <Form
-                onSubmit={values => console.log(values)}>
->
+      <Form 
+       onSubmit={handleSubmit}
+      >
+        >
         <Item floatingLabel>
           <Label>Email</Label>
-          <Input 
-          name={'email'}
-           value={values.email}
-           onChangeText={handleChange('email')}    
-           />
+          <Input
+            name={'email'}
+            value={values.email}
+            onChangeText={handleChange('email')}
+            autoCapitalize="none"
+          />
         </Item>
         <Item floatingLabel last>
-          <Label>Password</Label>
-          <Input secureTextEntry
-          name={'password'}
+          <Label>Password</Label> 
+          <Input
+            secureTextEntry
+            name={'password'}
             value={values.password}
-           onChangeText={handleChange('password')}    />
+            onChangeText={handleChange('password')}
+          />
         </Item>
         <Item>
-          <Button large 
-            onPress={handleSubmit}
-          >
+          <Button disabled={isSubmitting}
+           large onPress={handleSubmit}>
             <Text>Login</Text>
           </Button>
         </Item>
       </Form>
+      {touched.email && errors.email && <Text>{errors.email}</Text> }
+      {touched.password && errors.password && <Text>{errors.password}</Text> }
     </Content>
   </Container>
-);
+)}
 
 const FormikLoginForm = withFormik({
-   mapPropsToValues({email, password}){
-       return{
-           email: email || '',
-           password: password || ''
-       }
-   },
-   handleSubmit(values){
-       console.log(values)
-   }
+  mapPropsToValues ({ email, password }) {
+    return {
+      email: email || '',
+      password: password || ''
+    }
+  },
+  handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
+    console.log(values)
+    // mock
+    setTimeout(() => {
+      if(values.email === 'jeff@best.com'){
+        setErrors({email:'Jeff already in the system!!'})
+      } else{
+          resetForm()
+      }
+      setSubmitting(false)
+    }, 3000)
+  },
+ 
+  validationSchema : Yup.object().shape({
+    email: Yup.string().email('Email is not valid').required('Email is required'),
+    password: Yup.string().min(8, 'Password must be 8 characters or longer').required('Password is required')
+  }),
 })(LoginForm)
 
 class LoginScreen extends Component {
