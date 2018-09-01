@@ -22,14 +22,31 @@ import {
   Input
 } from 'native-base'
 class FormInput extends PureComponent {
-  render () {
+  state = {}
+
+  _handleChange = (value) => {
+    this.props.onChange(this.props.name, value)
+  }
+  _handleTouch = () => {
+    this.props.onTouch(this.props.name);
+  }
+
+  render() {
+    const { label, error, ...rest } = this.props
     return (
-      <View >
+      <View>
         <Item floatingLabel>
-          <Label>Label</Label>
-          <Input autoCapitalize="none" style={styles.textInput}/>
+          <Label>{label}</Label>
+          <Input
+            onChangeText={this._handleChange}
+            autoCapitalize="none"
+            onBlur={this._handleTouch}
+            style={styles.textInput}
+            autoCapitalize="none"
+            {...rest}
+          />
         </Item>
-        <Text style={styles.error}>Error</Text>
+        <Text style={styles.error}>{error}</Text>
       </View>
     )
   }
@@ -38,9 +55,9 @@ export default FormInput
 
 const styles = StyleSheet.create({
   error: {
-   color:'red'
+    color: 'red'
   },
-  textInput:{
-      marginBottom: 5,
+  textInput: {
+    marginBottom: 5
   }
 })
