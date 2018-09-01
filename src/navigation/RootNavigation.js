@@ -10,12 +10,24 @@ import {ContactScreen} from '../screens/ContactScreen/ContactScreen'
 import {ListDataScreen} from '../screens/ListDataScreen/ListDataScreen'
 import TasksScreen from '../screens/TasksScreen/TasksScreen'
 import LoginScreen from '../screens/LoginScreen/LoginScreen'
+import LoginFormScreen from '../screens/LoginScreen/LoginFormScreen'
 
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 
 
 export const Tabs = createBottomTabNavigator({
 
+    LoginFormScreen:{
+        screen: LoginFormScreen,
+        navigationOptions:{
+
+            tabBarLabel:'Login Form',
+            tabBarIcon:({tintColor})=> (
+                <Ionicons name="ios-list" size={25}/>
+            )
+        }
+    
+    },
     LoginScreen:{
         screen: LoginScreen,
         navigationOptions:{

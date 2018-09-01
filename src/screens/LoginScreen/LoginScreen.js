@@ -26,7 +26,8 @@ import {
 import { withFormik } from 'formik'
 import * as Yup from 'yup'
 
-import { loginRequest } from '../../redux/actions'
+import { loginRequest } from '../../redux/actions';
+import store from '../../redux/store'
 
 const LoginForm = ({
   values,
@@ -89,9 +90,10 @@ const FormikLoginForm = withFormik({
       password: password || ''
     }
   },
-  handleSubmit (values, { resetForm, setErrors, setSubmitting }) {
-    console.log(values);
-    this.props.loginRequest(values);
+  handleSubmit (values, { props, resetForm, setErrors, setSubmitting }) {
+  //  console.log("WORKING VALUES", values);
+   // props.loginUser(values);
+   store.dispatch(loginRequest(values));
     // mock
     setTimeout(() => {
       if (values.email === 'jeff@best.com') {
@@ -136,10 +138,13 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    loginUser: () => {
-      dispatch(loginRequest())
+   // onSubmit: (values, actions) => dispatch(loginRequest({ values, actions }))
+
+    // loginUser: (params) => {
+    //   dispatch(loginRequest(params))
     }
   }
-}
 
-export default connect(mapStateToProps, {loginRequest})(LoginScreen)
+
+// export default connect(null, {loginRequest})(LoginScreen)
+export default LoginScreen;
