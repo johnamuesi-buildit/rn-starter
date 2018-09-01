@@ -6,11 +6,11 @@
 	<dict>
 		<key>AppCenter-Config.plist</key>
 		<data>
-		9Nlggv1e1ciQw4EvAs0B+UkLBi0=
+		qxkRp3PE4G4owQoHRL2B39Cs3yk=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		R1Z7heyFbVk7e11t78xch22erU0=
+		iRJbgoRDaj0IFTajrtum5umlEIs=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -87,7 +87,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b85PwjttUviQwR1bCBRVATgd9zc=
+		+0stliH0PLX5SgS68gVb8c1cBrE=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -115,7 +115,7 @@
 		</data>
 		<key>PlugIns/pheaaTests.xctest.dSYM/Contents/Resources/DWARF/pheaaTests</key>
 		<data>
-		nKlOxKyh9Z18FVAF3aQ+zoBMSec=
+		9EbKaIxu0RMhWjaxR59iVIlh82w=
 		</data>
 		<key>PlugIns/pheaaTests.xctest/Info.plist</key>
 		<data>
@@ -127,7 +127,7 @@
 		</data>
 		<key>PlugIns/pheaaTests.xctest/pheaaTests</key>
 		<data>
-		oItuUDisD0urDMp/XuvyivlqFwA=
+		mNV0AdfWCM5kOMItiz2ljWgv7gc=
 		</data>
 		<key>Roboto.ttf</key>
 		<data>
@@ -156,22 +156,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9Nlggv1e1ciQw4EvAs0B+UkLBi0=
+			qxkRp3PE4G4owQoHRL2B39Cs3yk=
 			</data>
 			<key>hash2</key>
 			<data>
-			V/t1hFp8zp0v/8rgL27gSQOmSArec2LZbSfbRQCgCiw=
+			puI+XIqQA9yETcdsdk0AJ9ZAl/vQS/3Fx3KL8SbJwNY=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R1Z7heyFbVk7e11t78xch22erU0=
+			iRJbgoRDaj0IFTajrtum5umlEIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			p4yuk+nGDDQPz2NR+Mdrpk3mqWoXKOq3sX3aQ4lrT84=
+			xwyLx+yz91J/4hAFPMiWuoCcdGMEEDXPur/B2E4TmII=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -422,11 +422,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nKlOxKyh9Z18FVAF3aQ+zoBMSec=
+			9EbKaIxu0RMhWjaxR59iVIlh82w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z6kNFLtmvPceq1iK/Z0mF3qre9dkjtzcEAl47vIsUsc=
+			+KoqzdNeA+BSmWbn0NT81zoCgi1uM3lSdBKo5Dj1KVA=
 			</data>
 		</dict>
 		<key>PlugIns/pheaaTests.xctest/Info.plist</key>
@@ -455,11 +455,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oItuUDisD0urDMp/XuvyivlqFwA=
+			mNV0AdfWCM5kOMItiz2ljWgv7gc=
 			</data>
 			<key>hash2</key>
 			<data>
-			uHvHCoWceoH/Btnd6Ex3/wnMfaP7Mi+q432u4ZMCysQ=
+			hZ+ysSf22IdoKddmrmvRoztK7Q34h/xmOYMFSo6bo88=
 			</data>
 		</dict>
 		<key>Roboto.ttf</key>

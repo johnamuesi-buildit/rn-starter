@@ -12,4 +12,6 @@ export {getTasksSuccess} from './taskActions';
 export {loginRequest} from './authenticationActions';
 export {loginSuccess} from './authenticationActions';
 export {loginError} from './authenticationActions';
+export {clientSet} from './authenticationActions';
+export {clientUnSet} from './authenticationActions';
 

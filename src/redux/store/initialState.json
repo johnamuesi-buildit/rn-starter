@@ -1,146 +1,136 @@
 {
-    "user":{
-      "currentUser": {}
+  "currentUser":[
+    {
+      "username": "NorbertMrPerfect",
+      "id": "U100NorbertLeader",
+      "firstName": "Norbert",
+      "lastName": "Studio Lead"
     },
-    "errors":[
-        {
-            "user":"userNotFound",
-            "code": 1
-        },
-        {
-            "server":"connection",
-            "code": 2
-        }
-    ],
-    "loanBalances": [
-       {
-           "School":"Denver College",
-           "dateCommenced": "2016-12-7",
-           "amount":"10000",
-           "completed":false
-       },
-       {
-           "School":"New York College",
-           "dateCommenced": "2016-12-7",
-           "amount":"10000",
-           "completed":false
-       },
-       {
-           "School":"London College",
-           "dateCommenced": "2016-12-7",
-           "amount":"10000",
-           "completed":false
-       }
-        
-        ],
-    "transactions":[{
+    {
+      "username": "shauncoffee",
+      "id": "ShaunParris",
+      "firstName": "Shaun",
+      "lastName": "Parris"
+    },
+    
+    {
+      "username": "jefftheman",
+      "id": "jefflovessaga",
+      "firstName": "jeff",
+      "lastName": "bergman"
+    }
+  ],
+  "errors":[
+      {
+          "user":"userNotFound",
+          "code": 1
+      },
+      {
+          "server":"connection",
+          "code": 2
+      }
+  ],
+  "loanBalances": [
+     {
+         "School":"Denver College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000",
+         "completed":false,
+         "id": "U100NorbertLeader"
+     },
+     {
+         "School":"New York22 College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000",
+         "completed":false,
+         "id": "U100NorbertLeader"
+     },
+     {
+         "School":"New York222 College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000",
+         "completed":false,
+         "id": "U100NorbertLeader"
+     },
+     {
+         "School":"New York222 College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000",
+         "completed":false,
+         "id": "U100NorbertLeader"
+     },
+     {
+         "School":"New York22 College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000",
+         "completed":false,
+         "id": "U100NorbertLeader"
+     },
+     {
+         "School":"New York2 College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000",
+         "completed":false,
+         "id": "U100NorbertLeader"
+     },
+     {
+         "School":"London College",
+         "dateCommenced": "2016-12-7",
+         "amount":"10000000",
+         "completed":false,
+         "id": "ShaunParris"
+     }
+      
+      ],
+  "transactions":[{
+    "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+    "this_account":{
       "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-      "this_account":{
-        "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-        "holders":[{
-          "name":"OBP",
-          "is_alias":true
-        }],
-        "number":"123",
-        "kind":"AC",
-        "IBAN":"UK1234AD",
-        "swift_bic":"UK1234AD",
-        "bank":{
-          "national_identifier":"OBP",
-          "name":"OBP"
-        }
+      "holders":[{
+        "name":"OBP",
+        "is_alias":true
+      }],
+      "number":"123",
+      "kind":"AC",
+      "IBAN":"UK1234AD",
+      "swift_bic":"UK1234AD",
+      "bank":{
+        "national_identifier":"OBP",
+        "name":"OBP"
+      }
+    },
+    "other_account":{
+      "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+      "holder":{
+        "name":"OBP",
+        "is_alias":true
       },
-      "other_account":{
-        "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-        "holder":{
-          "name":"OBP",
-          "is_alias":true
-        },
-        "number":"123",
-        "kind":"3456",
-        "IBAN":"UK234DB",
-        "swift_bic":"UK12321DB",
-        "bank":{
-          "national_identifier":"OBP",
-          "name":"OBP"
-        },
-        "metadata":{
-          "public_alias":"NONE",
-          "private_alias":"NONE",
-          "more_info":"www.openbankproject.com",
-          "URL":"www.openbankproject.com",
-          "image_URL":"www.openbankproject.com",
-          "open_corporates_URL":"www.openbankproject.com",
-          "corporate_location":{
-            "latitude":1.231,
-            "longitude":1.231,
-            "date":"2017-09-19T00:00:00Z",
-            "user":{
-              "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-              "provider":"OBP",
-              "display_name":"OBP"
-            }
-          },
-          "physical_location":{
-            "latitude":1.231,
-            "longitude":1.231,
-            "date":"2017-09-19T00:00:00Z",
-            "user":{
-              "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-              "provider":"OBP",
-              "display_name":"OBP"
-            }
-          }
-        }
-      },
-      "details":{
-        "type":"AC",
-        "description":"this is for family",
-        "posted":"2017-09-19T00:00:00Z",
-        "completed":"2017-09-19T00:00:00Z",
-        "new_balance":{
-          "currency":"EUR",
-          "amount":"10"
-        },
-        "value":{
-          "currency":"EUR",
-          "amount":"10"
-        }
+      "number":"123",
+      "kind":"3456",
+      "IBAN":"UK234DB",
+      "swift_bic":"UK12321DB",
+      "bank":{
+        "national_identifier":"OBP",
+        "name":"OBP"
       },
       "metadata":{
-        "narrative":"NONE",
-        "comments":[{
-          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-          "value":"OBP",
+        "public_alias":"NONE",
+        "private_alias":"NONE",
+        "more_info":"www.openbankproject.com",
+        "URL":"www.openbankproject.com",
+        "image_URL":"www.openbankproject.com",
+        "open_corporates_URL":"www.openbankproject.com",
+        "corporate_location":{
+          "latitude":1.231,
+          "longitude":1.231,
           "date":"2017-09-19T00:00:00Z",
           "user":{
             "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
             "provider":"OBP",
             "display_name":"OBP"
           }
-        }],
-        "tags":[{
-          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-          "value":"OBP",
-          "date":"2017-09-19T00:00:00Z",
-          "user":{
-            "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-            "provider":"OBP",
-            "display_name":"OBP"
-          }
-        }],
-        "images":[{
-          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-          "label":"NONE",
-          "URL":"www.openbankproject.com",
-          "date":"2017-09-19T00:00:00Z",
-          "user":{
-            "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
-            "provider":"OBP",
-            "display_name":"OBP"
-          }
-        }],
-        "location":{
+        },
+        "physical_location":{
           "latitude":1.231,
           "longitude":1.231,
           "date":"2017-09-19T00:00:00Z",
@@ -151,6 +141,87 @@
           }
         }
       }
-    }]
-  }
-   
+    },
+    "details":{
+      "type":"AC",
+      "description":"this is for family",
+      "posted":"2017-09-19T00:00:00Z",
+      "completed":"2017-09-19T00:00:00Z",
+      "new_balance":{
+        "currency":"EUR",
+        "amount":"10"
+      },
+      "value":{
+        "currency":"EUR",
+        "amount":"10"
+      }
+    },
+    "metadata":{
+      "narrative":"NONE",
+      "comments":[{
+        "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+        "value":"OBP",
+        "date":"2017-09-19T00:00:00Z",
+        "user":{
+          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+          "provider":"OBP",
+          "display_name":"OBP"
+        }
+      }],
+      "tags":[{
+        "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+        "value":"OBP",
+        "date":"2017-09-19T00:00:00Z",
+        "user":{
+          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+          "provider":"OBP",
+          "display_name":"OBP"
+        }
+      }],
+      "images":[{
+        "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+        "label":"NONE",
+        "URL":"www.openbankproject.com",
+        "date":"2017-09-19T00:00:00Z",
+        "user":{
+          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+          "provider":"OBP",
+          "display_name":"OBP"
+        }
+      }],
+      "location":{
+        "latitude":1.231,
+        "longitude":1.231,
+        "date":"2017-09-19T00:00:00Z",
+        "user":{
+          "id":"5995d6a2-01b3-423c-a173-5481df49bdaf",
+          "provider":"OBP",
+          "display_name":"OBP"
+        }
+      }
+    }
+  }],
+  "tasks":[
+    {
+      "id":1,
+      "name": "Task1"
+    },
+    {
+      "id":2,
+      "name": "Task2"
+    },
+    {
+      "id":3,
+      "name": "Task3"
+    },
+    {
+      "id":4,
+      "name": "Task4"
+    },
+    {
+      "id":5,
+      "name": "Task5"
+    }
+  ]
+}
+ 
