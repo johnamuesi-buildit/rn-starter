@@ -47,6 +47,7 @@ class LoginFormScreen extends Component {
   _handleSubmit = async (values, bag) => {
     try {
       api(values);
+      this.props.loginRequest(values);
       setTimeout(() => {
         if (values.email === 'jeff@best.com') {
           bag.setErrors({ email: 'Jeff already in the system!!' })
@@ -169,4 +170,12 @@ const styles = StyleSheet.create({
   }
 })
 
-export default LoginFormScreen
+const mapDispatchToProps = dispatch => (bindActionCreators({
+  loginRequest
+}, dispatch));
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(LoginFormScreen)
+// export default LoginFormScreen
