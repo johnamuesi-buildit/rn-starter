@@ -30,10 +30,37 @@ import FormInput from '../../components/Form/Input'
 import { loginRequest } from '../../redux/actions'
 import store from '../../redux/store'
 
+const api = user => {
+  console.log('SUBMITTING: ', user.email)
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (user.email === 'test@test.com') {
+        alert('Email already in use')
+      } else {
+        resolve()
+      }
+    }, 3000);
+  })
+}
+
 class LoginFormScreen extends Component {
-  _handleSubmit = values => {
-    setTimeout(() => Alert.alert(JSON.stringify(values)), 10)
+  _handleSubmit = async (values, bag) => {
+    try {
+      api(values);
+      setTimeout(() => {
+        if (values.email === 'jeff@best.com') {
+          bag.setErrors({ email: 'Jeff already in the system!!' })
+        } else {
+          Alert.alert('Logged in')
+          bag.resetForm()
+        }
+        bag.setSubmitting(false)
+      }, 3000)
+    } catch (error) {
+      console.log(error)
+    }
   }
+
   render() {
     const { height: screenHeight } = Dimensions.get('window')
 
@@ -52,12 +79,30 @@ class LoginFormScreen extends Component {
             initialValues={{ email: '', password: '', confirmPassword: '' }}
             onSubmit={this._handleSubmit}
             validationSchema={Yup.object().shape({
-                email: Yup.string()
+              email: Yup.string()
                 .email('Not a valid email')
                 .required('Email is required'),
-                password: Yup.string().min(6).required()
+              password: Yup.string()
+                .min(6)
+                .required('Password is required'),
+              confirmPassword: Yup.string()
+                .oneOf(
+                  [Yup.ref('password', null)],
+                  'Confirm password must match password'
+                )
+                .required('Please confirm your password')
             })}
-            render={({ values, handleSubmit, setFieldValue, errors, touched, setFieldTouched }) => (
+            render={({
+              values,
+              handleSubmit,
+              setFieldValue,
+              errors,
+              touched,
+              setFieldTouched,
+              isValid,
+              isSubmitting,
+              setErrors
+            }) => (
               <React.Fragment>
                 <View>
                   <FormInput
@@ -91,10 +136,13 @@ class LoginFormScreen extends Component {
                     block
                     style={styles.loginButton}
                     onPress={handleSubmit}
+                    disabled={!isValid || isSubmitting}
+                    loading={isSubmitting}
                   >
                     <Icon name="ios-lock" />
                     <Text>Login</Text>
                   </Button>
+                  {touched.email && errors.email && <Text>{errors.email}</Text>}
                 </View>
               </React.Fragment>
             )}
