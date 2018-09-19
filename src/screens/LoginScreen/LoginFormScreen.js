@@ -138,7 +138,7 @@ class LoginFormScreen extends Component {
                     style={styles.loginButton}
                     onPress={handleSubmit}
                     disabled={!isValid || isSubmitting}
-                    loading={isSubmitting}
+                    
                   >
                     <Icon name="ios-lock" />
                     <Text>Login</Text>
